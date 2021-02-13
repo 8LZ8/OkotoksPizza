@@ -2,6 +2,18 @@ header {
     display: grid;
     justify-items: center;
 }
+ 
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;  
+}
 
 nav {
     display: grid;
@@ -21,7 +33,16 @@ nav > a {
     padding: 5px 15px;
 }
 
-h2 + img {
+nav > a:hover {
+
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function:linear;
+    background-color: rgb(255, 255, 255);
+    opacity: .9;
+}
+
+img {
     border-radius: 50%;
 }
 
@@ -37,11 +58,43 @@ nav > a:link {
     color:rgb(255, 254, 254);
 }
 
-nav > a:hover {
-    background-color:#a0240f;
-}
-
 nav > a:active {
-    background-color:#3f0e06;
+    background-color:yellow;
     color:white;
 }
+
+body {
+    animation-name: flash;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes flash {
+
+    0%  {background:fuchsia;} 
+    10% {background:orangered;}
+    20% {background:greenyellow;}
+    30% {background:blue;}
+    40% {background:white;}
+    50% {background:green;}
+    60% {background:teal;}
+    70% {background:black;}
+    80% {background:turquoise;}
+    90% {background:red;}
+    100% {background:purple;}
+}
+
+.pizzatransition {
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function:linear;
+}
+
+.pizzatransition:hover {
+    width: 700px;
+    height:700px;
+}
+
+
+
+    
