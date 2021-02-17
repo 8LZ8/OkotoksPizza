@@ -1,10 +1,11 @@
 header {
     display: grid;
     justify-items: center;
+    
 }
  
 h1 {
-    font-size: 6rem;
+    font-size: 6rem; 
 }
 
 h2 {
@@ -18,7 +19,7 @@ p {
 nav {
     display: grid;
     grid-auto-flow: column;
-    grid-column-gap: 50px;
+    grid-column-gap: 5px;
 }
 
 article section {
@@ -34,7 +35,6 @@ nav > a {
 }
 
 nav > a:hover {
-
     transition-property: all;
     transition-duration: 1s;
     transition-timing-function:linear;
@@ -64,37 +64,50 @@ nav > a:active {
 }
 
 body {
-    animation-name: flash;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes flash {
-
-    0%  {background:fuchsia;} 
-    10% {background:orangered;}
-    20% {background:greenyellow;}
-    30% {background:blue;}
-    40% {background:white;}
-    50% {background:green;}
-    60% {background:teal;}
-    70% {background:black;}
-    80% {background:turquoise;}
-    90% {background:red;}
-    100% {background:purple;}
+    background-color: darkgreen;
+    
 }
 
 .pizzatransition {
     transition-property: all;
     transition-duration: 2s;
-    transition-timing-function:linear;
+    transition-timing-function: linear;
 }
 
 .pizzatransition:hover {
     width: 700px;
-    height:700px;
+    height: 700px;
 }
 
+@media only screen and (min-width: 600px) {
+    nav {
+        grid-column-gap: 50px;
+    }
 
+    body {
+        background-color: blue;
+    }
+}
 
-    
+@media only screen and (min-width: 950px) {
+    body {
+        background-color: greenyellow;
+        animation-name: flash;
+        animation-duration: 3s;
+        animation-iteration-count: infinite; 
+    }
+
+    @keyframes flash {
+        0%  {background:fuchsia;}
+        10% {background:orangered;}
+        20% {background:greenyellow;}
+        30% {background:blue;}
+        40% {background:white;}
+        50% {background:green;}
+        60% {background:teal;}
+        70% {background:black;}
+        80% {background:turquoise;}
+        90% {background:red;}
+        100% {background:purple;}
+    }
+}
