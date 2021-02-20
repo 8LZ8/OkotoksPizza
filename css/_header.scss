@@ -1,0 +1,47 @@
+header {
+    display: grid;
+    justify-items: center;
+
+    nav {
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 5px;
+
+        a {
+            color: $white;
+            background-color: rgb(238, 17, 17);
+            border: 3px solid darkgreen;
+            border-radius: 5px;
+            padding: 5px 15px;
+        }
+
+        a:hover {
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function:linear;
+            background-color: $white;
+            opacity: .9;
+        }
+
+        a:visited {
+            color: $white;
+        }
+        
+        a:link {
+            color: $white;
+        }
+        
+        a:active {
+            background-color:yellow;
+            color: $white;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        nav {
+            grid-column-gap: 50px;
+        }
+    }
+}

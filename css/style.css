@@ -1,113 +1,187 @@
 header {
-    display: grid;
-    justify-items: center;
-    
-}
- 
-h1 {
-    font-size: 6rem; 
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
 }
 
-h2 {
-    font-size: 3rem;
+header nav {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 5px;
 }
 
-p {
-    font-size: 1.5rem;  
+header nav a {
+  color: #FFFFFF;
+  background-color: #ee1111;
+  border: 3px solid darkgreen;
+  border-radius: 5px;
+  padding: 5px 15px;
 }
 
-nav {
-    display: grid;
-    grid-auto-flow: column;
-    grid-column-gap: 5px;
+header nav a:hover {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  background-color: #FFFFFF;
+  opacity: .9;
 }
 
-article section {
-    border-bottom: 1px solid  rgb(184, 17, 11);
+header nav a:visited {
+  color: #FFFFFF;
 }
 
-nav > a {
-    color: rgb(255, 254, 254);
-    background-color: rgb(238, 17, 17);
-    border: 3px solid darkgreen;
-    border-radius: 5px;
-    padding: 5px 15px;
+header nav a:link {
+  color: #FFFFFF;
 }
 
-nav > a:hover {
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function:linear;
-    background-color: rgb(255, 255, 255);
-    opacity: .9;
-}
-
-img {
-    border-radius: 50%;
-}
-
-a:link {
-    color:darkgreen;
-}
-
-nav > a:visited {
-    color:rgb(250, 250, 255);
-}
-
-nav > a:link {
-    color:rgb(255, 254, 254);
-}
-
-nav > a:active {
-    background-color:yellow;
-    color:white;
-}
-
-body {
-    background-color: darkgreen;
-    
-}
-
-.pizzatransition {
-    transition-property: all;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-}
-
-.pizzatransition:hover {
-    width: 700px;
-    height: 700px;
+header nav a:active {
+  background-color: yellow;
+  color: #FFFFFF;
 }
 
 @media only screen and (min-width: 600px) {
-    nav {
-        grid-column-gap: 50px;
-    }
+  header nav {
+    grid-column-gap: 50px;
+  }
+}
 
-    body {
-        background-color: blue;
-    }
+footer {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 6rem;
+}
+
+h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+article section {
+  border-bottom: 1px solid #b8110b;
+}
+
+img {
+  border-radius: 50%;
+}
+
+a:link {
+  color: darkgreen;
+}
+
+body {
+  background-color: darkgreen;
+}
+
+.pizzatransition {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.pizzatransition:hover {
+  width: 700px;
+  height: 700px;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: blue;
+  }
 }
 
 @media only screen and (min-width: 950px) {
-    body {
-        background-color: greenyellow;
-        animation-name: flash;
-        animation-duration: 3s;
-        animation-iteration-count: infinite; 
+  body {
+    background-color: greenyellow;
+    -webkit-animation-name: flash;
+            animation-name: flash;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes flash {
+    0% {
+      background: fuchsia;
     }
-
-    @keyframes flash {
-        0%  {background:fuchsia;}
-        10% {background:orangered;}
-        20% {background:greenyellow;}
-        30% {background:blue;}
-        40% {background:white;}
-        50% {background:green;}
-        60% {background:teal;}
-        70% {background:black;}
-        80% {background:turquoise;}
-        90% {background:red;}
-        100% {background:purple;}
+    10% {
+      background: orangered;
     }
+    20% {
+      background: greenyellow;
+    }
+    30% {
+      background: blue;
+    }
+    40% {
+      background: #FFFFFF;
+    }
+    50% {
+      background: green;
+    }
+    60% {
+      background: teal;
+    }
+    70% {
+      background: black;
+    }
+    80% {
+      background: turquoise;
+    }
+    90% {
+      background: red;
+    }
+    100% {
+      background: purple;
+    }
+  }
+  @keyframes flash {
+    0% {
+      background: fuchsia;
+    }
+    10% {
+      background: orangered;
+    }
+    20% {
+      background: greenyellow;
+    }
+    30% {
+      background: blue;
+    }
+    40% {
+      background: #FFFFFF;
+    }
+    50% {
+      background: green;
+    }
+    60% {
+      background: teal;
+    }
+    70% {
+      background: black;
+    }
+    80% {
+      background: turquoise;
+    }
+    90% {
+      background: red;
+    }
+    100% {
+      background: purple;
+    }
+  }
 }
+/*# sourceMappingURL=style.css.map */
